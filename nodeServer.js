@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
   // 2. header
   // 3. body
 
-  // writeHead() takes 2 args:
+  // writeHead takes 2 args:
   // 1. status code
   // 2. object for the mime-type
   res.writeHead(200, {'content-type':'text/html'});
@@ -24,5 +24,5 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-// createServer 
+// createServer returns an object with a listen method
 server.listen(SERVER_PORT);
